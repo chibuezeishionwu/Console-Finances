@@ -9,6 +9,8 @@ The task was to calculate the total number of months, the net total amount of Pr
 My solution in the screenshot below shows my results printed in the browser using HTML and in the developer console.
 ![screenshot showing my results printed in the browser using HTML and in the developer console.](./assets/images/console-screenshot.png)
 
+[Visit GitHub Pages to view the assignment](https://chibuezeishionwu.github.io/Console-Finances/)
+
 # Technologies Used
 
 All code was done using Microsoft's Visual Studio Code Editor (VS Code).
