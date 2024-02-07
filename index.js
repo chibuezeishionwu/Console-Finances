@@ -90,7 +90,6 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-// Initialize variables to store the required information
 let totalMonths = finances.length;
 let totalProfitLoss = 0;
 let totalChange = 0;
@@ -103,21 +102,16 @@ let greatestDecrease = {
     amount: Infinity
 };
 
-// Loop through the finances array to calculate the required information
 for (let i = 0; i < finances.length; i++) {
-    // Extract month and profit/loss from each record
     let month = finances[i][0];
     let profitLoss = finances[i][1];
     
-    // Calculate total profit/loss
     totalProfitLoss += profitLoss;
     
-    // Calculate change in profit/loss (except for the first month)
     if (i > 0) {
         let change = profitLoss - finances[i - 1][1];
         totalChange += change;
         
-        // Check for greatest increase and decrease
         if (change > greatestIncrease.amount) {
             greatestIncrease.date = month;
             greatestIncrease.amount = change;
@@ -129,10 +123,8 @@ for (let i = 0; i < finances.length; i++) {
     }
 }
 
-// Calculate average change
 let averageChange = totalChange / (totalMonths - 1);
 
-// Display the results
 console.log('Total Months: ', totalMonths);
 console.log('Total Profit/Loss: $', totalProfitLoss);
 console.log('Average Change: $', averageChange.toFixed(2));
